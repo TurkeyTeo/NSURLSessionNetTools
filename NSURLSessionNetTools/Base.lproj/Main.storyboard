@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0Zi-rV-JIR">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gQb-UQ-TQt">
+                        <barButtonItem key="rightBarButtonItem" title="断点续传" id="qME-b1-lk9">
+                            <connections>
+                                <segue destination="lW7-MH-tT7" kind="show" id="1R7-MB-Ldf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="125"/>
+        </scene>
+        <!--Loadup View Controller-->
+        <scene sceneID="XuP-J1-iVT">
+            <objects>
+                <viewController id="lW7-MH-tT7" customClass="LoadupViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AEk-ew-62q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3N1-gb-M5f">
+                                <rect key="frame" x="166" y="217.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mnc-fb-BCj">
+                                <rect key="frame" x="171.5" y="318.5" width="32" height="30"/>
+                                <state key="normal" title="start"/>
+                                <connections>
+                                    <action selector="start:" destination="lW7-MH-tT7" eventType="touchUpInside" id="gqU-Qm-GgD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMF-4M-toI">
+                                <rect key="frame" x="172" y="428.5" width="31" height="30"/>
+                                <state key="normal" title="stop"/>
+                                <connections>
+                                    <action selector="stop:" destination="lW7-MH-tT7" eventType="touchUpInside" id="GdJ-0D-3bk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Mnc-fb-BCj" firstAttribute="centerY" secondItem="AEk-ew-62q" secondAttribute="centerY" id="2aJ-1J-FYw"/>
+                            <constraint firstItem="Mnc-fb-BCj" firstAttribute="centerX" secondItem="AEk-ew-62q" secondAttribute="centerX" id="8Bj-hB-YCG"/>
+                            <constraint firstItem="ZMF-4M-toI" firstAttribute="centerX" secondItem="AEk-ew-62q" secondAttribute="centerX" id="8ad-lv-AeK"/>
+                            <constraint firstItem="ZMF-4M-toI" firstAttribute="top" secondItem="Mnc-fb-BCj" secondAttribute="bottom" constant="80" id="AIe-2G-q3Q"/>
+                            <constraint firstItem="3N1-gb-M5f" firstAttribute="centerX" secondItem="AEk-ew-62q" secondAttribute="centerX" id="C6S-7d-IKo"/>
+                            <constraint firstItem="Mnc-fb-BCj" firstAttribute="top" secondItem="3N1-gb-M5f" secondAttribute="bottom" constant="80" id="NxQ-1n-0Rb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xrf-5i-mlr"/>
+                    </view>
+                    <connections>
+                        <outlet property="tipLab" destination="3N1-gb-M5f" id="1B2-4r-RTQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uuv-Ru-FG4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1274" y="125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cqc-41-YVS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="0Zi-rV-JIR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jI1-2Y-uE8">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zTH-NU-dcT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQp-qh-IWK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-207" y="125"/>
+        </scene>
+    </scenes>
+</document>
