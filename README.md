@@ -448,12 +448,3 @@ NSURLSessionUploadTask *uploadTask = [defaultSession uploadTaskWithStreamedReque
 
 4. NSURLSession支持后台上传下载任务。
 
-   ​
-
-   ​
-
-   <br>
-
-[Demo下载](https://github.com/TurkeyTeo/NSURLSessionNetTools)
-
-
