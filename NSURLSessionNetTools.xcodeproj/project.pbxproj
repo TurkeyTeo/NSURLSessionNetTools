@@ -36,6 +36,11 @@
 		80A0B3FD1FC2A600000C2D51 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3EC1FC2A600000C2D51 /* UIWebView+AFNetworking.m */; };
 		80A0B4001FC2A642000C2D51 /* TTNetwrokingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3FF1FC2A642000C2D51 /* TTNetwrokingManager.m */; };
 		80A0B4031FC2AD00000C2D51 /* UIImage+TTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B4021FC2AD00000C2D51 /* UIImage+TTImage.m */; };
+		80A0B4361FC5259B000C2D51 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 80A0B4311FC5259B000C2D51 /* Documentation.html */; };
+		80A0B4371FC5259B000C2D51 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B4331FC5259B000C2D51 /* GCDAsyncSocket.m */; };
+		80A0B4381FC5259B000C2D51 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B4351FC5259B000C2D51 /* GCDAsyncUdpSocket.m */; };
+		80A0B43B1FC57FB9000C2D51 /* SocketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B43A1FC57FB9000C2D51 /* SocketViewController.m */; };
+		80A0B43E1FC58340000C2D51 /* SocketServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B43D1FC58340000C2D51 /* SocketServerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +100,15 @@
 		80A0B3FF1FC2A642000C2D51 /* TTNetwrokingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNetwrokingManager.m; sourceTree = "<group>"; };
 		80A0B4011FC2AD00000C2D51 /* UIImage+TTImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TTImage.h"; sourceTree = "<group>"; };
 		80A0B4021FC2AD00000C2D51 /* UIImage+TTImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TTImage.m"; sourceTree = "<group>"; };
+		80A0B4311FC5259B000C2D51 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
+		80A0B4321FC5259B000C2D51 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		80A0B4331FC5259B000C2D51 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		80A0B4341FC5259B000C2D51 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		80A0B4351FC5259B000C2D51 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		80A0B4391FC57FB9000C2D51 /* SocketViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketViewController.h; sourceTree = "<group>"; };
+		80A0B43A1FC57FB9000C2D51 /* SocketViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketViewController.m; sourceTree = "<group>"; };
+		80A0B43C1FC58340000C2D51 /* SocketServerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SocketServerViewController.h; sourceTree = "<group>"; };
+		80A0B43D1FC58340000C2D51 /* SocketServerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SocketServerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,9 +141,14 @@
 		80A0B3961FBBD0BE000C2D51 /* NSURLSessionNetTools */ = {
 			isa = PBXGroup;
 			children = (
+				80A0B4301FC5259B000C2D51 /* GCD */,
 				80A0B3C71FC2A600000C2D51 /* AFNetworking */,
 				80A0B3971FBBD0BE000C2D51 /* AppDelegate.h */,
 				80A0B3981FBBD0BE000C2D51 /* AppDelegate.m */,
+				80A0B4391FC57FB9000C2D51 /* SocketViewController.h */,
+				80A0B43A1FC57FB9000C2D51 /* SocketViewController.m */,
+				80A0B43C1FC58340000C2D51 /* SocketServerViewController.h */,
+				80A0B43D1FC58340000C2D51 /* SocketServerViewController.m */,
 				80A0B39A1FBBD0BE000C2D51 /* ViewController.h */,
 				80A0B39B1FBBD0BE000C2D51 /* ViewController.m */,
 				80A0B4011FC2AD00000C2D51 /* UIImage+TTImage.h */,
@@ -210,6 +229,18 @@
 			path = "UIKit+AFNetworking";
 			sourceTree = "<group>";
 		};
+		80A0B4301FC5259B000C2D51 /* GCD */ = {
+			isa = PBXGroup;
+			children = (
+				80A0B4311FC5259B000C2D51 /* Documentation.html */,
+				80A0B4321FC5259B000C2D51 /* GCDAsyncSocket.h */,
+				80A0B4331FC5259B000C2D51 /* GCDAsyncSocket.m */,
+				80A0B4341FC5259B000C2D51 /* GCDAsyncUdpSocket.h */,
+				80A0B4351FC5259B000C2D51 /* GCDAsyncUdpSocket.m */,
+			);
+			path = GCD;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,6 +304,7 @@
 				80A0B3A11FBBD0BE000C2D51 /* Assets.xcassets in Resources */,
 				80A0B39F1FBBD0BE000C2D51 /* Main.storyboard in Resources */,
 				80A0B3AE1FBC1FF0000C2D51 /* my_sel@2x.png in Resources */,
+				80A0B4361FC5259B000C2D51 /* Documentation.html in Resources */,
 				80A0B3F31FC2A600000C2D51 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,12 +316,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80A0B4371FC5259B000C2D51 /* GCDAsyncSocket.m in Sources */,
 				80A0B3FB1FC2A600000C2D51 /* UIProgressView+AFNetworking.m in Sources */,
 				80A0B3F91FC2A600000C2D51 /* UIButton+AFNetworking.m in Sources */,
+				80A0B43B1FC57FB9000C2D51 /* SocketViewController.m in Sources */,
 				80A0B3FC1FC2A600000C2D51 /* UIRefreshControl+AFNetworking.m in Sources */,
 				80A0B3B71FBC3776000C2D51 /* NSString+MD5.m in Sources */,
 				80A0B3EF1FC2A600000C2D51 /* AFSecurityPolicy.m in Sources */,
+				80A0B4381FC5259B000C2D51 /* GCDAsyncUdpSocket.m in Sources */,
 				80A0B4031FC2AD00000C2D51 /* UIImage+TTImage.m in Sources */,
+				80A0B43E1FC58340000C2D51 /* SocketServerViewController.m in Sources */,
 				80A0B39C1FBBD0BE000C2D51 /* ViewController.m in Sources */,
 				80A0B3B11FBC3357000C2D51 /* LoadupViewController.m in Sources */,
 				80A0B3F11FC2A600000C2D51 /* AFURLResponseSerialization.m in Sources */,
