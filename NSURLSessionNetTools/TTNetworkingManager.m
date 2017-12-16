@@ -6,12 +6,12 @@
 //  Copyright © 2017年 Teo. All rights reserved.
 //
 
-#import "TTNetwrokingManager.h"
+#import "TTNetworkingManager.h"
 #import "UIImage+TTImage.h"
 
 #define BaseURL @"http://apis.baidu.com/apistore"
 
-@implementation TTNetwrokingManager
+@implementation TTNetworkingManager
 
 /**
  *  获得全局唯一的网络请求实例单例方法
@@ -20,7 +20,7 @@
  */
 +(instancetype)shareManager
 {
-    static TTNetwrokingManager * manager = nil;
+    static TTNetworkingManager * manager = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         manager = [[self alloc] initWithBaseURL:[NSURL URLWithString:BaseURL]];
@@ -86,7 +86,7 @@
     switch (type) {
         case HttpRequestTypeGet:
         {
-            [[TTNetwrokingManager shareManager] GET:urlString parameters:paraments progress:^(NSProgress * _Nonnull downloadProgress) {
+            [[TTNetworkingManager shareManager] GET:urlString parameters:paraments progress:^(NSProgress * _Nonnull downloadProgress) {
                 progress(downloadProgress.completedUnitCount / downloadProgress.totalUnitCount);
                 
             } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -100,7 +100,7 @@
             
         case HttpRequestTypePost:
         {
-            [[TTNetwrokingManager shareManager] POST:urlString parameters:paraments progress:^(NSProgress * _Nonnull uploadProgress) {
+            [[TTNetworkingManager shareManager] POST:urlString parameters:paraments progress:^(NSProgress * _Nonnull uploadProgress) {
                 progress(uploadProgress.completedUnitCount / uploadProgress.totalUnitCount);
                 
             } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -172,7 +172,7 @@
 +(void)cancelAllRequest
 {
     
-    [[TTNetwrokingManager shareManager].operationQueue cancelAllOperations];
+    [[TTNetworkingManager shareManager].operationQueue cancelAllOperations];
     
 }
 
@@ -191,9 +191,9 @@
     
     /**根据请求的类型 以及 请求的url创建一个NSMutableURLRequest---通过该url去匹配请求队列中是否有该url,如果有的话 那么就取消该请求*/
     
-    NSString * urlToPeCanced = [[[[TTNetwrokingManager shareManager].requestSerializer requestWithMethod:requestType URLString:string parameters:nil error:&error] URL] path];
+    NSString * urlToPeCanced = [[[[TTNetworkingManager shareManager].requestSerializer requestWithMethod:requestType URLString:string parameters:nil error:&error] URL] path];
     
-    for (NSOperation * operation in [TTNetwrokingManager shareManager].operationQueue.operations) {
+    for (NSOperation * operation in [TTNetworkingManager shareManager].operationQueue.operations) {
         //如果是请求队列
         if ([operation isKindOfClass:[NSURLSessionTask class]]) {
             //请求的类型匹配

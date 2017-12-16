@@ -34,7 +34,7 @@ typedef void(^downloadProgress)(float progress);
 
 
 
-@interface TTNetwrokingManager : AFHTTPSessionManager
+@interface TTNetworkingManager : AFHTTPSessionManager
 
 /**
  *  单例方法

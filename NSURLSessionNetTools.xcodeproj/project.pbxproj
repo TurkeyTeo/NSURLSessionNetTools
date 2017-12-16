@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8068687F1FE4C12700328D72 /* TTNetworkingService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8068687E1FE4C12700328D72 /* TTNetworkingService.m */; };
 		80A0B3991FBBD0BE000C2D51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3981FBBD0BE000C2D51 /* AppDelegate.m */; };
 		80A0B39C1FBBD0BE000C2D51 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B39B1FBBD0BE000C2D51 /* ViewController.m */; };
 		80A0B39F1FBBD0BE000C2D51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80A0B39D1FBBD0BE000C2D51 /* Main.storyboard */; };
@@ -34,7 +35,7 @@
 		80A0B3FB1FC2A600000C2D51 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3E81FC2A600000C2D51 /* UIProgressView+AFNetworking.m */; };
 		80A0B3FC1FC2A600000C2D51 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3EA1FC2A600000C2D51 /* UIRefreshControl+AFNetworking.m */; };
 		80A0B3FD1FC2A600000C2D51 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3EC1FC2A600000C2D51 /* UIWebView+AFNetworking.m */; };
-		80A0B4001FC2A642000C2D51 /* TTNetwrokingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3FF1FC2A642000C2D51 /* TTNetwrokingManager.m */; };
+		80A0B4001FC2A642000C2D51 /* TTNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B3FF1FC2A642000C2D51 /* TTNetworkingManager.m */; };
 		80A0B4031FC2AD00000C2D51 /* UIImage+TTImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B4021FC2AD00000C2D51 /* UIImage+TTImage.m */; };
 		80A0B4361FC5259B000C2D51 /* Documentation.html in Resources */ = {isa = PBXBuildFile; fileRef = 80A0B4311FC5259B000C2D51 /* Documentation.html */; };
 		80A0B4371FC5259B000C2D51 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A0B4331FC5259B000C2D51 /* GCDAsyncSocket.m */; };
@@ -44,6 +45,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8068687D1FE4C12700328D72 /* TTNetworkingService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTNetworkingService.h; sourceTree = "<group>"; };
+		8068687E1FE4C12700328D72 /* TTNetworkingService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNetworkingService.m; sourceTree = "<group>"; };
 		80A0B3941FBBD0BE000C2D51 /* NSURLSessionNetTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSURLSessionNetTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A0B3971FBBD0BE000C2D51 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		80A0B3981FBBD0BE000C2D51 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -96,8 +99,8 @@
 		80A0B3EA1FC2A600000C2D51 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		80A0B3EB1FC2A600000C2D51 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		80A0B3EC1FC2A600000C2D51 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		80A0B3FE1FC2A642000C2D51 /* TTNetwrokingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTNetwrokingManager.h; sourceTree = "<group>"; };
-		80A0B3FF1FC2A642000C2D51 /* TTNetwrokingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNetwrokingManager.m; sourceTree = "<group>"; };
+		80A0B3FE1FC2A642000C2D51 /* TTNetworkingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTNetworkingManager.h; sourceTree = "<group>"; };
+		80A0B3FF1FC2A642000C2D51 /* TTNetworkingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TTNetworkingManager.m; sourceTree = "<group>"; };
 		80A0B4011FC2AD00000C2D51 /* UIImage+TTImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TTImage.h"; sourceTree = "<group>"; };
 		80A0B4021FC2AD00000C2D51 /* UIImage+TTImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+TTImage.m"; sourceTree = "<group>"; };
 		80A0B4311FC5259B000C2D51 /* Documentation.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Documentation.html; sourceTree = "<group>"; };
@@ -153,8 +156,10 @@
 				80A0B39B1FBBD0BE000C2D51 /* ViewController.m */,
 				80A0B4011FC2AD00000C2D51 /* UIImage+TTImage.h */,
 				80A0B4021FC2AD00000C2D51 /* UIImage+TTImage.m */,
-				80A0B3FE1FC2A642000C2D51 /* TTNetwrokingManager.h */,
-				80A0B3FF1FC2A642000C2D51 /* TTNetwrokingManager.m */,
+				8068687D1FE4C12700328D72 /* TTNetworkingService.h */,
+				8068687E1FE4C12700328D72 /* TTNetworkingService.m */,
+				80A0B3FE1FC2A642000C2D51 /* TTNetworkingManager.h */,
+				80A0B3FF1FC2A642000C2D51 /* TTNetworkingManager.m */,
 				80A0B3AF1FBC3357000C2D51 /* LoadupViewController.h */,
 				80A0B3B01FBC3357000C2D51 /* LoadupViewController.m */,
 				80A0B3B21FBC3466000C2D51 /* DownLoadManager.h */,
@@ -336,11 +341,12 @@
 				80A0B3F51FC2A600000C2D51 /* AFAutoPurgingImageCache.m in Sources */,
 				80A0B3F01FC2A600000C2D51 /* AFURLRequestSerialization.m in Sources */,
 				80A0B3F21FC2A600000C2D51 /* AFURLSessionManager.m in Sources */,
-				80A0B4001FC2A642000C2D51 /* TTNetwrokingManager.m in Sources */,
+				80A0B4001FC2A642000C2D51 /* TTNetworkingManager.m in Sources */,
 				80A0B3F61FC2A600000C2D51 /* AFImageDownloader.m in Sources */,
 				80A0B3EE1FC2A600000C2D51 /* AFNetworkReachabilityManager.m in Sources */,
 				80A0B3FD1FC2A600000C2D51 /* UIWebView+AFNetworking.m in Sources */,
 				80A0B3B41FBC3466000C2D51 /* DownLoadManager.m in Sources */,
+				8068687F1FE4C12700328D72 /* TTNetworkingService.m in Sources */,
 				80A0B3F81FC2A600000C2D51 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				80A0B3F71FC2A600000C2D51 /* AFNetworkActivityIndicatorManager.m in Sources */,
 			);
